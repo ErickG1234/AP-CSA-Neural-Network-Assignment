@@ -35,12 +35,12 @@ public class Neuron {
     // TODO: Implement getBias method
 
 
-    // left off here, let them do everything after line 41, so the for loop and everything else  
+     
     // TODO: Implement the calculateWeightedSum method to calculate the weighted sum of the inputs and return the activation level                                
     public double calculateWeightedSum(double inputs[]) {
 
         return activationLevel;
-        //returns the every number times it's cressponding wieght, + bias
+        // Returns the every number times it's cressponding wieght, + bias
     }
 
     // Given
