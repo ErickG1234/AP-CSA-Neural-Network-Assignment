@@ -18,33 +18,26 @@ public class Neuron {
         
     }
 
-    // Write Setters and Getters for your instance variables (weights and bias)
+    // TODO: Write Setters and Getters for your instance variables (weights and bias)
 
     // Hint: Your weights instance variable is an array, 
     // so what do you need to pass into the setter and getter methods to access and individually modify weights?
     
-    // setWeight
+    // TODO: Implement setWeight method
 
 
-    // getWeight
+    // TODO: Implement getWeight method
 
 
-    // setBias
+    // TODO: Implement setBias method
 
 
-    // getBias
+    // TODO: Implement getBias method
 
 
-     // left off here, let them do everything after line 41, so the for loop and everything else                                  
+    // left off here, let them do everything after line 41, so the for loop and everything else  
+    // TODO: Implement the calculateWeightedSum method to calculate the weighted sum of the inputs and return the activation level                                
     public double calculateWeightedSum(double inputs[]) {
-        double weightedSum = bias;
-        double activationLevel = 0.0;
-
-        for (int i = 0; i < inputs.length; i++) {
-            weightedSum += (weights[i] * inputs[i]);
-        }
-
-        activationLevel = sigmoid(weightedSum);
 
         return activationLevel;
         //returns the every number times it's cressponding wieght, + bias

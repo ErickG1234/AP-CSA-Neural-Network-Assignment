@@ -52,7 +52,7 @@ public class NeuralNetwork {
     //     output = new Neuron(2, masterRng);
     // }
 
-
+    // TODO: Implement the predict method to make a prediction based on the input data
     public double predict(double[] inputs) {
         for (int i = 0; i < hiddenLayer.length; i++) {
             activationNums[i] = hiddenLayer[i].calculateWeightedSum(inputs);

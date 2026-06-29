@@ -30,11 +30,11 @@ public class Main {
 
         NeuralNetwork myNeuralNetwork = new NeuralNetwork(0.1);
 
-        // Call the train method to train the neural network with the training data set and the expected output
+        // TODO:Call the train method to train the neural network with the training data set and the expected output
         
         
         for (int i = 0; i < trainingDataSet.length; i++) {
-            // Call the predict method to get the prediction for each student in the training data set
+            // TODO: Call the predict method to get the prediction for each student in the training data set
             
             
             System.out.println("Student " + i + " Computer Prediction: " + /* Variable you stored the prediction in here */);
