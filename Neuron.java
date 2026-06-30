@@ -1,12 +1,13 @@
 import java.util.Random;
 
 public class Neuron {
-    private double[] weights;
-    private double bias;
+    // Create a double array instance variable called weights
+    
+    // Create a double instance variable called bias
+   
 
-    // Constructor for giving neurons random numbers (replicating beggining processes)
-    // Subtract Random by 0.5 to have negative numbers as well
-    // numInputs = amout of data pieces given - therefore, amount of connections for hidden layer neurons
+    // Constructor for giving neurons random numbers (replicating beginning processes)
+    // numInputs = amount of data pieces given - therefore, amount of connections for hidden layer neurons
     public Neuron(int numInputs, Random rng) {
         weights = new double[numInputs];
 
@@ -36,11 +37,21 @@ public class Neuron {
 
 
      
-    // TODO: Implement the calculateWeightedSum method to calculate the weighted sum of the inputs and return the activation level                                
+    // TODO: Implement the calculateWeightedSum method to calculate the weighted sum 
+    // of the inputs and return the activation level                                
     public double calculateWeightedSum(double inputs[]) {
 
-        return activationLevel;
-        // Returns the every number times it's cressponding wieght, + bias
+        // Iterate through the inputs
+
+
+        // weighted sum = current weight x current input
+
+
+        // Whatever variable you have stored after you finished the loop put it through the sigmoid
+
+        /* variable = */ sigmoid(/* Variable here*/)
+
+        return ;
     }
 
     // Given

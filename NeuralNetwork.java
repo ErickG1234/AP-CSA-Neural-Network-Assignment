@@ -18,9 +18,8 @@ public class NeuralNetwork {
     private Neuron output;
     private double learningRate;
     private double[] activationNums = new double[2];
-
-    // Using two seperate contructors: 
-    // 1)Random numbers for weights and bias - for when model actually works efficiently
+ 
+    // 1) Random numbers for weights and bias - for when model actually works efficiently
     public NeuralNetwork(double userLearningRate) {
         learningRate = userLearningRate;
         Random randomNum = new Random();
@@ -39,24 +38,21 @@ public class NeuralNetwork {
         return learningRate;
     }
 
-    
-
-    // 2)User input for weights and bias
-    // Randon(#) = starts at the same number then next number is random - good for testing and debugging
-    // public NeuralNetwork(double userLearningRate) {
-    //     learningRate = userLearningRate;
-    //     Random masterRng = new Random(67);
-    //     hiddenLayer = new Neuron[2];
-    //     hiddenLayer[0] = new Neuron(2,masterRng);
-    //     hiddenLayer[1] = new Neuron(2,masterRng);
-    //     output = new Neuron(2, masterRng);
-    // }
 
     // TODO: Implement the predict method to make a prediction based on the input data
+    // In this method, we are trying to find a activation level for our neurons, 
+    // which is basically a guess or prediction based off our input
     public double predict(double[] inputs) {
-        for (int i = 0; i < hiddenLayer.length; i++) {
-            activationNums[i] = hiddenLayer[i].calculateWeightedSum(inputs);
-        }
+
+        // Iterate through the Neurons in the Hidden Layer
+        
+        
+            /* What instance variable should store te activation values?*/ 
+            // find activation level by calling the caluclateWeightSum method on our current hidden neuron
+
+            // To find the actual activation level,
+            // call the calculateWeightedSum function on the output neuron and store that in a variable then return it
+        
         
         double activationLevel = output.calculateWeightedSum(activationNums);
         

@@ -28,9 +28,9 @@ public class Main {
             }
         }
 
-        NeuralNetwork myNeuralNetwork = new NeuralNetwork(0.1);
-        // Left off here - make sure to look over all the files and format the method students need to implement
-        // Also, on the line below. Make sure the studetns know what they are implementing. 
+        // TODO: create a NeuralNetwork object and sei it's learning rate to 0.1
+        
+
         // TODO: Call the train method to train the neural network with the training data set and the expected output
         
         
