@@ -4,7 +4,9 @@ public class Main {
         int rowNum = 4;
         int colNum = 2;
         int epochs = 1000;
-       
+
+
+        // 1 = passed, 0 = failed
         double[] studentPassedTest = {1.0, 0.0, 1.0, 0.0};
         
         double[][] trainingDataSet = new double[rowNum][colNum];
@@ -28,8 +30,8 @@ public class Main {
             }
         }
 
-        // TODO: Create a NeuralNetwork object and sei it's learning rate to 0.1
-        
+        // TODO: Create a NeuralNetwork object and set its learning rate to 0.1
+        NeuralNetwork neuralNetwork = new NeuralNetwork(2, 1, 0.1);
 
         // TODO: Call the train method to train the neural network with the training data set and the expected output
         
