@@ -1,4 +1,5 @@
 // Neural Network Visualization:
+// ⚪ = Neuron
 
 // Input   Hidden
 // Level   Layer
@@ -14,9 +15,12 @@
 
 import java.util.Random;
 public class NeuralNetwork {
+    // Neruons in hidden layer
     private Neuron[] hiddenLayer;
+    // Output Neuron 
     private Neuron output;
     private double learningRate;
+    // Activation Numbers of hidden layer Neurons (0 <= activationNum <= 1)
     private double[] activationNums = new double[2];
  
     // 1) Random numbers for weights and bias - for when model actually works efficiently
@@ -48,22 +52,18 @@ public class NeuralNetwork {
         
         
             /* What instance variable should store te activation values?*/ 
-            // find activation level by calling the caluclateWeightSum method on our current hidden neuron
+            // Find activation level by calling the caluclateWeightSum method on our current hidden neuron
 
             // To find the actual activation level,
-            // call the calculateWeightedSum function on the output neuron and store that in a variable then return it
-        
-        
-        double activationLevel = output.calculateWeightedSum(activationNums);
-        
-        return activationLevel;
+            // call the calculateWeightedSum function on the output neuron usimg the acvtivationNums we just caluclates,
+            // and store that in a variable then return it
     }
 
-    // Start Train method here - "black box" math - given 
+    // STUDENTS DON"T WORRY ABOUT THIS - Given
     // Looks at dataset various times (for multiple rounds (full loop), called Epochs)
-    // make a prediction for each piece of data, 
-    // caluclate how wrong the prediction was compared to the target
-    // apply adjustemnt calculus
+    // Make a prediction for each piece of data, 
+    // Caluclate how wrong the prediction was compared to the target
+    // Ppply adjustemnt calculus
 
     public void train(double[][] trainingData, double[] targets, int epochs) {
         // Used to store the current student's information, the expected 

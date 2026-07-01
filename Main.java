@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
         // Create Training Data (2D array) Set for Neural Network
-        int rowNum = /* specify number of rows here */;
-        int colNum = /* specify number of columns here */;
-        int epochs = /* specify number of epochs here */;
+        int rowNum = 4;
+        int colNum = 2;
+        int epochs = 1000;
        
         double[] studentPassedTest = {1.0, 0.0, 1.0, 0.0};
         
@@ -28,7 +28,7 @@ public class Main {
             }
         }
 
-        // TODO: create a NeuralNetwork object and sei it's learning rate to 0.1
+        // TODO: Create a NeuralNetwork object and sei it's learning rate to 0.1
         
 
         // TODO: Call the train method to train the neural network with the training data set and the expected output

@@ -1,9 +1,9 @@
 import java.util.Random;
 
 public class Neuron {
-    // Create a double array instance variable called weights
+    //TODO: Create a double array instance variable called weights
     
-    // Create a double instance variable called bias
+    //TODO: Create a double instance variable called bias
    
 
     // Constructor for giving neurons random numbers (replicating beginning processes)
@@ -49,12 +49,13 @@ public class Neuron {
 
         // Whatever variable you have stored after you finished the loop put it through the sigmoid
 
+       
         /* variable = */ sigmoid(/* Variable here*/)
 
         return ;
     }
 
-    // Given
+    // Given - function that takes a number and reduces to a number between 0 and 1
     private double sigmoid(double weightedSum) {
         double squishy = 1.0 / (1.0 + Math.exp(-weightedSum));
 
